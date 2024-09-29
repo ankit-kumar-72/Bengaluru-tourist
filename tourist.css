@@ -1,0 +1,309 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Universal selector to remove default padding and margin for all elements */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* --------------------------Navbar----------------------------------- */
+
+/* Sticky class to make the navbar sticky at the top when scrolling */
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* Main nav section styling for flex layout, alignment, and background color */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.815); /* Semi-transparent black background */
+}
+
+/* Styling for the navbar elements, including font and spacing */
+.navbar {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+    gap: 20px; /* Gap between navbar items */
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Styling for links in the navbar */
+.navbar a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* White text */
+    font-size: 15px; /* Font size */
+    padding: 5px; /* Padding around links */
+}
+
+/* Logo styling */
+.logo img {
+    height: 60px;
+    width: 100px; /* Logo dimensions */
+}
+
+/* Search bar container */
+.search {
+    margin-right: 20px;
+}
+
+/* Input field in search bar */
+.search input {
+    padding: 5px 10px; /* Padding inside input */
+}
+
+/* Hover effect on navbar links */
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px; /* Rounded corners */
+}
+
+/* Padding for specific navbar links */
+.nav1 {
+    padding: 0px 10px;
+}
+
+/* -----------------------Hero Section-------------------------------- */
+
+/* Hero section styling, with height and overflow for background video */
+.hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* CSS for background video in the hero section */
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Keeps video behind other content */
+    object-fit: cover; /* Ensures the video covers the entire section */
+}
+
+/* Headline text in hero section */
+.headline {
+    position: absolute;
+    color: #ffffffd8; /* Semi-transparent white */
+    font-size: 4rem; /* Large font size */
+    padding-left: 20%; /* Padding to shift text horizontally */
+    top: 30%; /* Vertical positioning */
+    z-index: 1; /* Ensures headline is above video */
+    text-shadow: 2px 4px 4px rgb(10, 10, 10); /* Text shadow effect */
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Main container styling with background and text color */
+.main {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+/* About section styling with padding and justified text */
+#about {
+    padding: 20px 30px;
+    text-align: justify;
+    color: rgba(235, 227, 227, 0.856); /* Light gray text color */
+}
+
+/* Header for introductory section */
+.Intro_head {
+    text-align: center;
+    padding: 20px 0px;
+    color: blueviolet;
+}
+
+/* Place name section styling with spacing and flex layout */
+.place_name {
+    padding: 10px 80px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* General image styling */
+img {
+    width: 500px;
+    height: 300px;
+    border-radius: 40px; /* Rounded corners for images */
+}
+
+/* Hover effect on images */
+img:hover {
+    transition: transform .2s;
+    transform: scale(1.12); /* Enlarge on hover */
+}
+
+/* Styling for h4 headers */
+h4 {
+    padding-bottom: 10px;
+}
+
+/* Styling for links in h4 headers */
+h4 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(245, 221, 7); /* Yellow text */
+}
+
+/* Form container styling for contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 27%; /* Centering form content */
+}
+
+/* Textarea styling for forms */
+textarea {
+    background-color: antiquewhite;
+    border: 1.5px solid rgba(0, 0, 0, 0.436);
+    width: 500px;
+    padding-left: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Contact section padding */
+#contact_us {
+    padding: 10px 80px;
+}
+
+/* Input field styling in the form */
+.inp {
+    border: 1.5px solid rgba(0, 0, 0, 0.436);
+    background-color: antiquewhite;
+    height: 44px;
+    width: 500px;
+    padding-left: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for input fields */
+.inp_hov:hover {
+    border: 1.5px solid black;
+    background-color: rgba(234, 237, 246, 0.553); /* Light background color on hover */
+    transition: transform .2s;
+    transform: scale(1.12); /* Slight scale-up on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Footer button container styling */
+.btm {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Button styling */
+.btm input {
+    padding: 5px 10px;
+    background-color: antiquewhite;
+    border: 2px solid white;
+    font-size: 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for first footer button */
+.btm1:hover {
+    background-color: rgba(254, 2, 2, 0.753); /* Red background on hover */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(3, 3, 3); /* Shadow effect */
+    transition: transform .8s;
+    transform: scale(1.12) rotate(360deg); /* Rotate on hover */
+    cursor: pointer;
+}
+
+/* Hover effect for second footer button */
+.btm2:hover {
+    background-color: rgba(78, 254, 2, 0.753); /* Green background on hover */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(3, 3, 3); /* Shadow effect */
+    transition: transform .8s;
+    transform: scale(1.12) rotate(360deg); /* Rotate on hover */
+    cursor: pointer;
+}
+
+/* -----------------------Footer Section------------------- */
+
+/* Footer container styling with flex layout and alignment */
+footer {
+    background-color: rgba(0, 0, 0, 0.815); /* Semi-transparent black */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo image in the footer */
+.foot_img img {
+    height: 80px;
+    width: 140px; /* Footer logo dimensions */
+}
+
+/* Social media icons container */
+.social_media {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+    padding-right: 50px;
+}
+
+/* Styling for social media links */
+.social_media a {
+    text-decoration: none;
+    color: white; /* White text */
+}
+
+/* Hover effect for social media links */
+.social_media a:hover {
+    color: rgb(253, 26, 1); /* Red color on hover */
+}
+
+/* Footer address text alignment */
+.address {
+    text-align: center;
+}
+
+
+/* ------------Responsive----------------- */
+
+@media(max-width: 900px) {
+    #myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1; /* Keeps video behind other content */
+        object-fit: cover; /* Ensures the video covers the entire section */
+    }
+    .place_name {
+        padding: 10px 80px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+}
